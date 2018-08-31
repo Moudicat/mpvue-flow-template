@@ -9,8 +9,8 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "wxd3792134a06d68db",
-	"projectname": "ziroom-wxapp",
+	"appid": "111",
+	"projectname": "111",
 	"condition": {
 		"search": {
 			"current": -1,

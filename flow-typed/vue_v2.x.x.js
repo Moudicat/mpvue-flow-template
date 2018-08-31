@@ -221,14 +221,15 @@ declare class Vue {
   $nextTick(callback: () => void): void;
   $nextTick(...rest: Array<void>): Promise<void>;
   $createElement: Vue$CreateElement;
-
+  $bus: any;
   static config: {
     silent: boolean,
     optionMergeStrategies: any,
     devtools: boolean,
     // Covariant-by-default Method Types(see https://flowtype.org/blog/2016/10/04/Property-Variance.html#covariant-by-default-method-types)
     errorHandler: (err: Error, vm: Vue) => void,
-    keyCodes: { [key: string]: number }
+    keyCodes: { [key: string]: number },
+    [x: string]: any
   };
 
   static extend(options: Vue$FunctionalComponentOptions | Vue$ComponentOptions): typeof Vue;

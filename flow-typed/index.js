@@ -14,3 +14,5 @@ declare var global: {
   clearTimeout: any,
   [x: string]: any
 };
+
+declare var process: any;
